@@ -1,6 +1,6 @@
 import streamlit as st
 st.set_page_config(
-    page_title="ChatGLM3 Demo",
+    page_title="阿甘的聊天小岛",
     page_icon=":robot:",
     layout='centered',
     initial_sidebar_state='expanded',
@@ -11,15 +11,15 @@ import demo_chat, demo_ci, demo_tool
 from enum import Enum
 
 DEFAULT_SYSTEM_PROMPT = '''
-You are ChatGLM3, a large language model trained by Zhipu.AI. Follow the user's instructions carefully. Respond using markdown.
+You are 阿甘的聊天小岛, a large language model trained by 胖胖不胖 Follow the user's instructions carefully. Respond using markdown.
 '''.strip()
 
 # Set the title of the demo
-st.title("ChatGLM3 Demo")
+st.title("阿甘的聊天小岛")
 
 # Add your custom text here, with smaller font size
 st.markdown(
-    "<sub>智谱AI 公开在线技术文档: https://lslfd0slxc.feishu.cn/wiki/WvQbwIJ9tiPAxGk8ywDck6yfnof </sub> \n\n <sub> 更多 ChatGLM3-6B 的使用方法请参考文档。</sub>",
+    "<sub>胖胖不胖提供技术支持</sub>",
     unsafe_allow_html=True)
 
 
@@ -53,7 +53,7 @@ with st.sidebar:
     )
 
 prompt_text = st.chat_input(
-    'Chat with ChatGLM3!',
+    '欢迎来到阿甘的聊天小岛!',
     key='chat_input',
 )
 
